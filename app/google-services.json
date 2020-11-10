@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "412091466391",
+    "firebase_url": "https://jokeapplication-3b32d.firebaseio.com",
+    "project_id": "jokeapplication-3b32d",
+    "storage_bucket": "jokeapplication-3b32d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412091466391:android:f590d9b199ea145e9c5fd2",
+        "android_client_info": {
+          "package_name": "com.example.jokeapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412091466391-cmnfbbmlnmuj246ctfqlf0v85cugdjjt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgCccu-lAA5L_fGpHq_scdBCA7-M9w85Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412091466391-cmnfbbmlnmuj246ctfqlf0v85cugdjjt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

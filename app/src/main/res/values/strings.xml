@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JokeApplication</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Chat</string>
+    <string name="tab_text_2">Status</string>
+    <string name="tab_text_3">Calls</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
