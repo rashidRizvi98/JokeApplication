@@ -22,14 +22,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         this.context = context;
     }
 
-    public void insertData(List<ListItem> insertItem){
-
-        DiffUtilCallback diffUtilCallback=new DiffUtilCallback(listItems,insertItem);
-        DiffUtil.DiffResult diffResult=DiffUtil.calculateDiff(diffUtilCallback);
-
-        listItems.addAll(insertItem);
-        diffResult.dispatchUpdatesTo(this);
-    }
 
     public void updateData(List<ListItem> newItem){
 
@@ -58,8 +50,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.textSetup.setText(listItem.getSetup());
         holder.textPunchline.setText(listItem.getPunchline());
 
-     //   notifyItemChanged(holder.getAdapterPosition());
-   //     notifyDataSetChanged();
     }
 
     @Override

@@ -71,21 +71,19 @@ public class MainActivity extends AppCompatActivity {
             case R.id.rdGeneral:
                 if (checked)
                     url="https://official-joke-api.appspot.com/jokes/general/ten";
-                loadRecyclerViewData();
                     break;
             case R.id.rdProgramming:
                 if (checked)
                     url="https://official-joke-api.appspot.com/jokes/programming/ten";
-                loadRecyclerViewData();
                 break;
             case R.id.rdKnock:
                 if (checked)
                     url="https://official-joke-api.appspot.com/jokes/knock-knock/ten";
-                loadRecyclerViewData();
                 break;
 
         }
 
+        loadRecyclerViewData();
 
 
 
@@ -99,27 +97,10 @@ public class MainActivity extends AppCompatActivity {
         adapterM.updateData(update);
 
         ProgressDialog progressDialog=new ProgressDialog(this);
-        progressDialog.setMessage("Loading data...");
+        progressDialog.setMessage("Loading jokes...");
         progressDialog.show();
 
 
-/*        RadioGroup grp=findViewById(R.id.radioGroup);
-        RadioButton answer=findViewById(grp.getCheckedRadioButtonId());
-
-        grp.clearCheck();
-
-        if(answer==rGeneral){
-            url="https://official-joke-api.appspot.com/jokes/general/ten";
-        }else
-        if(answer==rProgramming){
-            url="https://official-joke-api.appspot.com/jokes/programming/ten";
-        }else
-        if(answer==rKnock){
-            url="https://official-joke-api.appspot.com/jokes/knock-knock/ten";
-        }
-
-
-*/
 
         JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
